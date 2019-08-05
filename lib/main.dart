@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:plantexploration/widgets/avatar_image.dart';
 import 'package:plantexploration/widgets/mid_image.dart';
 import 'package:plantexploration/widgets/plant_card.dart';
@@ -6,7 +7,10 @@ import 'package:plantexploration/widgets/topbar.dart';
 
 import 'models/new_plants.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setEnabledSystemUIOverlays([]);
+  runApp(MyApp());
+} 
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
